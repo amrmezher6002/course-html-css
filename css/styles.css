@@ -153,6 +153,7 @@ a {
   height: 64px;
   justify-content: center;
   width: 64px;
+  border: 0;
 }
 .icon-containar--accent {
   background: var(--color-accent);
@@ -624,4 +625,23 @@ a {
 .block-plans .card {
   max-width: 500px;
   margin: 0 auto;
+}
+/*Block-Feature*/
+.feature__heading {
+  margin: 1rem 0;
+}
+.feature {
+  gap: 4rem 2rem;
+  margin: 12rem 0;
+}
+.feature:first-of-type {
+  margin-top: 6rem;
+}
+.feature__image {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
 }
